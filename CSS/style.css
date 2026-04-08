@@ -36,7 +36,7 @@ body {
   height: 90vh;
   background:
     linear-gradient(to right, rgba(7,32,61, 1.5) , rgba(7,32,61 , 0.6), transparent),
-    url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f') center/cover;
+    url('../images/background.png') center/cover;
 }
 
 .overlay {
