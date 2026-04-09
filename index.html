@@ -1,250 +1,206 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ramkrushna Abhyasika</title>
+﻿<!DOCTYPE html>
+<html lang="en">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="CSS/style.css">
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ramkrushna Abhyasika</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/style.css">
 </head>
 
 <body>
+  <div id="loader" aria-hidden="true">
+    <div class="loader-content">
+      <span class="loader-logo">RA</span>
+      <span class="loader-text">Preparing Your Study Space</span>
+    </div>
+  </div>
 
-  <!-- ================= Loader ================= -->
-    <div id="loader">
-        <div class="loader-content">
-            <span class="loader-logo">RA</span>
-            <span class="loader-text">Loading...</span>
+  <header class="site-header" id="top">
+    <nav class="nav-shell">
+      <a href="#top" class="brand">Ramkrushna Abhyasika</a>
+      <div class="nav-links">
+        <a href="#top" class="nav-link active">Home</a>
+        <a href="seats.html" class="nav-link">Select Seat</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section">
+      <div class="hero-panel reveal-up">
+        <p class="hero-tag">Focused. Calm. Productive.</p>
+        <h1>Study In A Space Built For Serious Results</h1>
+        <p class="hero-subtitle">Reserve a quiet seat, stay consistent, and prepare in an environment made for deep
+          concentration.</p>
+        <div class="hero-actions">
+          <button class="btn btn-primary" id="btnSeats">View Available Seats</button>
+          <button class="btn btn-ghost" id="btnTour">Take Virtual Tour</button>
         </div>
-    </div>
+      </div>
+      <div class="hero-metrics reveal-up delay-1">
+        <article class="metric-card">
+          <span class="metric-value" data-count="12">12</span>
+          <span class="metric-label">Open Slots</span>
+        </article>
+        <article class="metric-card">
+          <span class="metric-value" data-count="84">84</span>
+          <span class="metric-label">Reserved Seats</span>
+        </article>
+        <article class="metric-card">
+          <span class="metric-value">24/7</span>
+          <span class="metric-label">CCTV Security</span>
+        </article>
+      </div>
+    </section>
 
-<!-- HEADER -->
-<header class="header">
-  <div class="logo">📘 Ramkrushna Abhyasika</div>
-</header>
+    <section class="feature-strip section reveal-up" aria-label="Core Features">
+      <article class="feature-card">
+        <span class="material-icons" aria-hidden="true">self_improvement</span>
+        <h3>Silent Zone</h3>
+        <p>Distraction-free atmosphere for long study sessions.</p>
+      </article>
+      <article class="feature-card highlight">
+        <span class="material-icons" aria-hidden="true">event_seat</span>
+        <h3>Reserved Seating</h3>
+        <p>Pick your preferred study seat with clear availability.</p>
+      </article>
+      <article class="feature-card">
+        <span class="material-icons" aria-hidden="true">wifi</span>
+        <h3>High-Speed WiFi</h3>
+        <p>Stable internet for online classes and tests.</p>
+      </article>
+      <article class="feature-card">
+        <span class="material-icons" aria-hidden="true">bolt</span>
+        <h3>Power Backup</h3>
+        <p>Reliable power for uninterrupted preparation.</p>
+      </article>
+    </section>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="overlay">
-    <div class="badge">PREMIUM STUDY EXPERIENCE</div>
-    <h1>Find Your Perfect Study Space</h1>
-    <p>Peaceful environment, flexible seating, designed for deep focus and success</p>
-    <button onclick="goToSeats()">View Available Seats</button>
-    <button onclick="goToViewLibrary()" class="btn-library-photos">Take a Virtual Tour</button>
-  </div>
-</section>
+    <section class="section split-grid">
+      <article class="security-card reveal-up">
+        <h2>Secured by Smart Monitoring</h2>
+        <p>Our CCTV-enabled premises are monitored continuously to maintain a safe and respectful study environment.</p>
+        <p class="verified">Verified Secure Environment</p>
+        <img src="images/cctv.png" alt="CCTV monitoring setup">
+      </article>
 
-<!-- FEATURES -->
-<section class="features">
+      <article class="about-card reveal-up delay-1">
+        <h2>Built for Daily Consistency</h2>
+        <p>From comfortable desks to clear lighting and proper ventilation, every detail is designed to help you keep
+          your routine strong.</p>
+        <ul>
+          <li>Dedicated study desks</li>
+          <li>Clean and organized floors</li>
+          <li>Calm and disciplined environment</li>
+          <li>Supportive administration</li>
+        </ul>
+      </article>
+    </section>
 
-  <div class="card">
-    <span class="material-icons">self_improvement</span>
-    <p>Silent Study</p>
-  </div>
+    <section class="section">
+      <div class="section-head reveal-up">
+        <h2>Facilities</h2>
+        <p>Everything you need to maintain momentum and focus.</p>
+      </div>
+      <div class="facility-grid">
+        <article class="facility-card reveal-up">
+          <img src="images/desk.png" alt="Comfortable desk seating">
+          <h3>Comfort Seating</h3>
+        </article>
+        <article class="facility-card reveal-up delay-1">
+          <img src="images/desk2.png" alt="Silent study interior">
+          <h3>Silent Environment</h3>
+        </article>
+        <article class="facility-card reveal-up delay-2">
+          <img src="images/desk.png" alt="Clean and neat study hall">
+          <h3>Clean Study Space</h3>
+        </article>
+      </div>
+    </section>
 
-  <div class="card active">
-    <span class="material-icons">event_seat</span>
-    <p>Reserved Seating</p>
-  </div>
+    <section class="section">
+      <div class="section-head reveal-up">
+        <h2>Library Environment</h2>
+        <p>Preview the atmosphere before you reserve your seat.</p>
+      </div>
+      <div class="gallery-grid">
+        <img class="reveal-up"
+          src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1200&q=80"
+          alt="Bookshelf and reading area">
+        <img class="reveal-up delay-1"
+          src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=1200&q=80"
+          alt="Modern library interior">
+        <img class="reveal-up delay-2"
+          src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=1200&q=80"
+          alt="Study desks in library">
+      </div>
+    </section>
 
-  <div class="card">
-    <span class="material-icons">wifi</span>
-    <p>Fast WiFi</p>
-  </div>
+    <section class="section cta-block reveal-up">
+      <h2>Ready to Claim Your Spot?</h2>
+      <p>Secure your seat now and keep your preparation consistent every day.</p>
+      <button class="btn btn-primary" id="btnBook">Check Available Seats</button>
+    </section>
 
-  <div class="card">
-    <span class="material-icons">power</span>
-    <p>Power Backup</p>
-  </div>
-</section>
-
-<div class="center-container">
-    <div class="security-card">
-        <h3>Secured by Intelligence</h3>
-
-        <p>
-            24/7 CCTV monitoring ensure your safety and privacy around clock.
-        </p>
-
-        <h5>✔ VERIFIED SECURE ENVIRONMENT</h5>
-
-        <div class="img-box">
-            <img src="images/cctv.png">
+    <section class="section info-grid">
+      <article class="location-card reveal-up">
+        <h2>Location</h2>
+        <p>100 Feet Rd, Kolhe Nagar, Ramanand Nagar, Jalgaon, Maharashtra 425002</p>
+        <div class="map-wrap">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.724422154545!2d75.54264257525595!3d21.003680980639356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd90ffb40c4f685%3A0xe615b88f5936e88!2sRamkrushna%20abhyasika!5e0!3m2!1sen!2sin!4v1775656111107!5m2!1sen!2sin"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Ramkrushna Abhyasika Location">
+          </iframe>
         </div>
-    </div>
-</div>
+      </article>
 
-<section class="facilities">
-  <h2>Focused & Distraction-Free</h2>
-  <p>Every corner of our sanctuary is curated to provide the ultimate academic atmosphere.</p>
+      <article class="hours-card reveal-up delay-1">
+        <h2>Working Hours</h2>
+        <div class="hours-row"><span>Mon - Sat</span><strong>6 AM - 11 PM</strong></div>
+        <div class="hours-row"><span>Sunday</span><strong>8 AM - 8 PM</strong></div>
+        <div class="hours-row"><span>Public Holidays</span><strong>Open</strong></div>
+      </article>
+    </section>
+  </main>
 
-  <div class="facilities-scroll">
-
-    <div class="facility-card">
-      <img src="images/desk.png">
-      <h4>Comfort Seating</h4>
-    </div>
-
-    <div class="facility-card">
-      <img src="images/desk2.png">
-      <h4>Silent Environment</h4>
-    </div>
-
-    <div class="facility-card">
-      <img src="images/desk.png">
-      <h4>Clean Study Space</h4>
-    </div>
-
-  </div>
-</section>
-
-<!-- GALLERY -->
-<section class="gallery">
-  <h2>Library Environment</h2>
-  <div class="gallery-scroll">
-    <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f">
-    <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66">
-    <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f">
-    <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66">
-    <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f">
-    <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66">
-  </div>
-</section>
-
-<section class="book-seat">
-  
-  <div class="book-container">
-    
-    <h2>Ready to Start Your Focused Journey?</h2>
-    <p>Don't leave your results to chance. Secure your premium study space today.</p>
-
-    <button class="btn-book-seat">Check Available Seats</button>
-
-    <!-- STATS -->
-    <div class="seat-info">
-
-      <div class="info-card">
-        <h3>12</h3>
-        <p>Open Slots</p>
+  <footer class="contact-footer">
+    <section class="section">
+      <h2>Contact Support</h2>
+      <p>Reach us quickly through your preferred channel.</p>
+      <div class="contact-grid">
+        <a href="tel:+919876543210" class="contact-card">
+          <span class="material-icons" aria-hidden="true">call</span>
+          <div>
+            <h3>Call</h3>
+            <p>+91 98765 43210</p>
+          </div>
+        </a>
+        <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" class="contact-card">
+          <span class="material-icons" aria-hidden="true">chat</span>
+          <div>
+            <h3>WhatsApp</h3>
+            <p>Quick support chat</p>
+          </div>
+        </a>
+        <a href="mailto:support@library.com" class="contact-card">
+          <span class="material-icons" aria-hidden="true">mail</span>
+          <div>
+            <h3>Email</h3>
+            <p>support@library.com</p>
+          </div>
+        </a>
       </div>
+    </section>
+  </footer>
 
-      <div class="info-card">
-        <h3>84</h3>
-        <p>Reserved</p>
-      </div>
-
-      <div class="info-card">
-        <h3>100%</h3>
-        <p>Occupancy</p>
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-<section class="location-section">
-  <h3>Location</h3>
-
-  <p class="address">
-    100 Feet Rd, Kolhe Nagar, Ramanand Nagar, <br> Jalgaon, Maharashtra 425002
-  </p>
-
-  <div class="map-card">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.724422154545!2d75.54264257525595!3d21.003680980639356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd90ffb40c4f685%3A0xe615b88f5936e88!2sRamkrushna%20abhyasika!5e0!3m2!1sen!2sin!4v1775656111107!5m2!1sen!2sin" 
-    width="600" 
-    height="450" 
-    style="border:0;" 
-    allowfullscreen="" 
-    loading="lazy" 
-    referrerpolicy="no-referrer-when-downgrade"
-    <a href="https://maps.google.com?q=Ramkrushna+Abhyasika" target="_blank"> Open in Maps </a>></iframe>
-  </div>
-</section>
-
-<section class="working-hours">
-
-  <h3>Working Hours</h3>
-
-  <div class="hours-list">
-
-    <div class="hour-row">
-      <span>Mon - Sat</span>
-      <span class="time">6 AM - 11 PM</span>
-    </div>
-
-    <div class="hour-row">
-      <span>Sunday</span>
-      <span class="time">8 AM - 8 PM</span>
-    </div>
-
-    <div class="hour-row">
-      <span>Public Holidays</span>
-      <span class="closed">Opened</span>
-    </div>
-  </div>
-</section>
-
-<section class="contact-footer">
-
-  <h3>Contact Support</h3>
-  <p class="subtitle">We’re here to help you anytime</p>
-
-  <div class="contact-footer-cards">
-
-    <a href="tel:+919876543210" class="footer-card">
-      <span class="icon">📞</span>
-      <div>
-        <h4>Call Us</h4>
-        <p>+91 98765 43210</p>
-      </div>
-    </a>
-
-    <a href="https://wa.me/919876543210" target="_blank" class="footer-card">
-      <span class="icon">💬</span>
-      <div>
-        <h4>WhatsApp</h4>
-        <p>Quick chat support</p>
-      </div>
-    </a>
-
-    <a href="mailto:support@library.com" class="footer-card">
-      <span class="icon">📧</span>
-      <div>
-        <h4>Email</h4>
-        <p>support@library.com</p>
-      </div>
-    </a>
-
-  </div>
-
-</section>
-
-<!-- ACHIEVERS
-<section class="achievers">
-  <h2>Top Achievers</h2>
-  <div class="student-card">Rahul - SSC Cleared</div>
-  <div class="student-card">Priya - UPSC Qualified</div>
-</section> -->
-
-<!-- CTA -->
-<!-- <section class="cta">
-  <h2>Start Your Focused Journey</h2>
-  <p>Join hundreds of students preparing for success</p>
-  <button onclick="goToSeats()">Book Your Seat</button>
-</section> -->
-
-<script src="script.js">
-function goToSeats(){
-  window.location.href = "seats.html";
-}
-
-function goToViewLibrary(){
-    window.location.href = "libraryPhoto.html"
-}
-</script>
+  <script src="script.js"></script>
 </body>
+
 </html>
