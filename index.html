@@ -12,6 +12,14 @@
 
 <body>
 
+  <!-- ================= Loader ================= -->
+    <div id="loader">
+        <div class="loader-content">
+            <span class="loader-logo">RA</span>
+            <span class="loader-text">Loading...</span>
+        </div>
+    </div>
+
 <!-- HEADER -->
 <header class="header">
   <div class="logo">📘 Ramkrushna Abhyasika</div>
@@ -229,7 +237,7 @@
   <button onclick="goToSeats()">Book Your Seat</button>
 </section> -->
 
-<script>
+<script src="script.js">
 function goToSeats(){
   window.location.href = "seats.html";
 }
@@ -238,6 +246,5 @@ function goToViewLibrary(){
     window.location.href = "libraryPhoto.html"
 }
 </script>
-
 </body>
 </html>
